@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(0, 166, 255), white);
+}
+/*=========================================================TOP SECTION=================================================================*/
+.wrapper .addTask{
+    display: flex;
+    padding: 20px;
+}
+.wrapper .addTask input{
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 12pt;
+    outline-color: blue;
+}
+.wrapper .addTask button{
+    width: 120px;
+    height: 33px;
+    font-size: 10pt;
+    border-radius: 5px;
+}
+/*=========================================================ENDING TOP SECTION DESIGN=====================================================*/
+
+/*=========================================================TASK CONTAINER DESIGN=========================================================*/
+.taskContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 500px;
+    max-width: 80%;
+    height: fit-content;
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, .8);
+    filter: blur(.5px);
+    border-radius: 15px;
+}
+.taskContainer header{
+    font-size: 13pt;
+    -webkit-text-stroke: .4pt white;
+    color: white;
+    position: relative;
+    letter-spacing:1.6pt;
+    margin-bottom:15px;
+}
+.taskContainer header::after{
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 1.3px;
+    border-radius:25px;
+    bottom: -15%;
+    background-color: white;
+    left: -15%;
+}
+/*--------------------------------------------TASK FIELD--------------------------------*/
+.taskContainer .task {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    color: white;
+    -webkit-text-stroke: .4pt white;
+    font-size: 11pt;
+    letter-spacing: 1pt;
+    position: relative;
+    padding: 10px;
+    box-shadow: 1px 5px 10px aqua;
+    border-radius: 10px;
+}
+
+.taskContainer .task p{
+    width: 85%;
+}
+.taskContainer .task button{
+    width: 90px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    margin-right: 5px;
+    transition: .4s all ease;
+}
+.taskContainer .task button:hover{
+    cursor: pointer;
+    color: aqua;
+    transform: scale(.96);
+}
+/*-------------------------------------------END OF TASK FIELD----------------------------*/
+/*====================================================================END OF TASK CONTAINER DESIGN==========================================*/
